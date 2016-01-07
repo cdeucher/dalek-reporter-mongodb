@@ -69,7 +69,7 @@ You can change this by adding a config option to the your Dalekfile
   }
 }
 ```
-### [Github Issues](//github.com/ryanface/dalek-reporter-mongodb/issues)
+## [Github Issues](//github.com/ryanface/dalek-reporter-mongodb/issues)
 
 Report issues with reporter-mongodb, submit pull requests to fix problems, or to
 create summarized and documented feature requests (preferably with pull
