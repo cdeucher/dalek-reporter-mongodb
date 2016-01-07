@@ -1,6 +1,6 @@
 {
   "name": "dalek-reporter-mongodb",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "MongoDB reporter for the Dalekjs testing framework",
   "homepage": "http://dalekjs.com",
   "main": "index.js",
