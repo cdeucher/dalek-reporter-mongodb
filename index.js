@@ -173,7 +173,7 @@ Reporter.prototype = {
     this.data.assertionsFailed = data.assertionsFailed;
     this.data.assertionsPassed = data.assertionsPassed;
 
-    if (this.CONF.host != undefined || this.CONF.host != "") {
+    if (this.CONF.host != undefined && this.CONF.host != "") {
       var host = (this.CONF.authenticate) ? this.CONF.user+':'+this.CONF.pass+'@'+this.CONF.host+':'+this.CONF.port+'/'+this.CONF.db : this.CONF.host+'/'+this.CONF.db;
       var db = mongojs(host, [this.CONF.db]);
           db.on('error', function (err) { console.log({'error':err}); });
@@ -187,7 +187,7 @@ Reporter.prototype = {
                db.close();
           });
     }else{
-      console.log(this.data);
+      console.log(JSON.stringify(this.data));
     }
     return this;
   },

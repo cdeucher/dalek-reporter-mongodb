@@ -1,6 +1,6 @@
 {
   "name": "dalek-reporter-mongodb",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "MongoDB reporter for the Dalekjs testing framework",
   "homepage": "http://dalekjs.com",
   "main": "index.js",
@@ -45,5 +45,11 @@
   },
   "contributors": [
     {}
-  ]
+  ],
+  "readme": "dalek-reporter-mongodb\n===================\n\n> DalekJS reporter plugin for MongoDB\n\n## Ressources\n\n## Docs\n\nThe reporter can be installed with the following command:\n```\n$ npm install dalek-reporter-mongodb --save-dev\n```\nThe result that will be saved.\n\n```javascript\n{\n    \"_id\" : ObjectId(\"568bf62889f8e4790fcb8613\"),\n    \"tests\" : [\n        {\n            \"id\" : \"test2\",\n            \"name\" : \"test\",\n            \"browser\" : \"PhantomJS\",\n            \"status\" : true,\n            \"passedAssertions\" : 1,\n            \"failedAssertions\" : 0,\n            \"actions\" : [\n                {\n                    \"value\" : \"http://google.com\",\n                    \"type\" : \"open\",\n                    \"uuid\" : \"uuid-3\",\n                    \"kind\" : \"action\"\n                },\n                {\n                    \"success\" : true,\n                    \"expected\" : \"Google\",\n                    \"value\" : \"Google\",\n                    \"message\" : \"It has title\",\n                    \"type\" : \"title\",\n                    \"kind\" : \"assertion\"\n                }\n            ]\n        }\n    ],\n    \"elapsedTime\" : {\n        \"hours\" : null,\n        \"minutes\" : null,\n        \"seconds\" : 1.1741814639999999\n    },\n    \"status\" : true,\n    \"assertions\" : 1,\n    \"assertionsFailed\" : 0,\n    \"assertionsPassed\" : 1\n}\n```\nYou can change this by adding a config option to the your Dalekfile\n\n```javascript\n{\n  \"reporter\": [\"mongodb\"],\n  \"mongodb-reporter\": {\n    \"authenticate\": true,\n    \"host\":\"localhost\",\n    \"user\":\"\",\n    \"pass\":\"\",\n    \"db\":\"report\",\n    \"colletion\":\"tests\",\n    \"port\":27017\n  }\n}\n```\n## [Github Issues](//github.com/ryanface/dalek-reporter-mongodb/issues)\n\nReport issues with reporter-mongodb, submit pull requests to fix problems, or to\ncreate summarized and documented feature requests (preferably with pull\nrequests that implement the feature).\n\n## Legal FooBar (MIT License)\n\nCopyright (c) 2016 Cristiano Boell\n\nDistributed under [MIT license](https://github.com/dalekjs/dalek/blob/master/LICENSE-MIT)\n",
+  "readmeFilename": "README.md",
+  "gitHead": "a03804f438895bd36584349f26f8669065723745",
+  "_id": "dalek-reporter-mongodb@0.0.11",
+  "_shasum": "77ec7cf12abd3503fc22d5f8cf686cca52df5c4d",
+  "_from": "dalek-reporter-mongodb@*"
 }
